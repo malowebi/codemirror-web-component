@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+
+
+    "strict": true,
+    // Allow JavaScript files to be imported inside the project.
+    "allowJs": true,
+    "target": "ES2018",
+    // Sets the module system for the program.
+    "module": "commonjs",    
+    // Generate .d.ts files for every .ts or .js file inside the project. 
+    "declaration": true,
+    // Configure the root directory for where declaration files are emitted.
+    "declarationDir": "dist",
+    // Skip type checking of declaration files.
+    "skipLibCheck": true,    
+    // Issue a warning when detecting code that can’t be correctly interpreted 
+    // by a single-file transpilation process. This ensure that Babel can 
+    // safely transpile files in the project.
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    // Control how to determine whether a file is a script or a module.
+    "moduleDetection": "force",
+    // Allow importing modules with a .json extension.
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    // Issue an error if a program tries to include a file by a casing 
+    // different from the casing on disk.
+    "forceConsistentCasingInFileNames": true,
+    /* If transpiling with TypeScript: */
+    // "moduleResolution": "nodenext",
+    // "outDir": "dist",
+    // "sourceMap": true,
+    /* AND if building for a library in a monorepo: */
+    "composite": true,
+    // Generates a source map for .d.ts files which map back 
+    // to the original .ts source file in the project.
+    "declarationMap": true,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.spec.ts"]
+}

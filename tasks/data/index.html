@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Codemirror web component</title>
+    <script src="codemirror.js"></script>
+    <style>
+    *, ::before, ::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      background-color: #bdb0a4;
+      color: #efefef;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      background-color: #eeeeee;
+      box-shadow: 1px 2px 8px #000000;
+      color: #000000;
+      display: flex;
+      height: 100vh;
+      margin: 0 auto;
+      max-width: 50%;
+      flex-direction: column;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <code-mirror gutters line-numbers highlight-active-line language="markdown">
+# Web Components
+
+## 1. Introduction
+
+## 2. Custom Elements
+
+## 3. Shadow DOM
+
+## 4. Templates and Slots
+      </code-mirror>
+    </main>
+  </body>
+</html>
